@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Iteration</title>
+</head>
+<body>
+    <h1>Loops and Iteration</h1>
+    <p>This is a simple example of loops and iteration in programming.</p>
+
+    <h2>Student Report Values</h2>
+    <pre id="forLoop"></pre>
+    <pre id="whileLoop"></pre>
+    <pre id="forEachLoop"></pre>
+    <pre id="forInLoop"></pre>
+    
+    <h2>Next Days</h2>
+    <pre id="otherDays"></pre>
+
+    <script>
+        const DAYS = 6;
+        const LIMIT = 30;
+        let studentReport = [11, 42, 33, 64, 29, 37, 44];
+
+        // Display outputs
+        function displayOutputs(id, label, values) {
+            const output = label + ": " + values.join(", ");
+            document.getElementById(id).textContent = output;
+            console.log(output);
+        }
+
+        // For Loop
+        let forLoopOutput = [];
+        for (let i = 0; i <studentReport.length; i++){
+            if (studentReport[i] < LIMIT) {
+                forLoopOutput.push(studentReport[i]);
+            }
+        }
+        displayOutputs("forLoop", "For Loop", forLoopOutput);
+
+        // While Loop
+        let whileLoopOutput = [];
+        let i = 0;
+        while (i < studentReport.length) {
+            if (studentReport[i] < LIMIT) {
+                whileLoopOutput.push(studentReport[i]);
+            }
+            i++;
+        }
+        displayOutputs("whileLoop", "While Loop", whileLoopOutput);
+
+        // forEach Loop
+        let forEachLoopOutput = [];
+        studentReport.forEach(function(value) {
+            if (value < LIMIT) {
+                forEachLoopOutput.push(value);
+            }
+        });
+        displayOutputs("forEachLoop", "forEach Loop", forEachLoopOutput);
+
+        // for...in Loop
+        let forInLoopOutput = [];
+        for (let index in studentReport) {
+            if (studentReport[index] < LIMIT) {
+                forInLoopOutput.push(studentReport[index]);
+            }
+        }
+        displayOutputs("forInLoop", "for...in Loop", forInLoopOutput);
+
+        // next Days
+        let otherDaysOutput = [];
+        let today = new Date();
+        for (let i =0; i < DAYS; i++) {
+            let nextDay = new Date();
+            nextDay.setDate(today.getDate() + i);
+            let options = { weekday: 'long' };
+            let dayName = nextDay.toLocaleDateString('en-US', options);
+            otherDaysOutput.push(nextDay.toDateString());
+        }
+        displayOutputs("otherDays", "Next " + DAYS + " Days", otherDaysOutput);
+    </script>
+    
+</body>
+</html>
