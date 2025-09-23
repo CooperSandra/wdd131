@@ -65,14 +65,14 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 0 1rem;
-    margin: 1rem auto;
+    padding: 1rem;
+    margin: 0 auto;
     max-width: 100%;
 }
 
-main h1 {
+main h1, main h2 {
     grid-column: 1 / -1;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     text-align: center;
 }
 
