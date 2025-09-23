@@ -67,7 +67,7 @@ main {
     gap: 1rem;
     padding: 1rem;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 850px;
 }
 
 main h1, main h2 {
