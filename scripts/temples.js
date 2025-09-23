@@ -5,7 +5,7 @@ document.getElementById("lastModified").textContent = "Last Modification: " + do
 // Toggle navigation menu on small screens
 const hamburger = document.createElement("button");
 hamburger.classList.add("hamburger");
-hamburger.innerHTML = "&#9776";
+hamburger.innerHTML = "&#9776;";
 document.querySelector("header").prepend(hamburger);
 
 const nav = document.querySelector(".nav");
@@ -13,7 +13,7 @@ const nav = document.querySelector(".nav");
 hamburger.addEventListener("click", () => {
  const isOpen = nav.style.display === "flex";
  nav.style.display = isOpen ? "none" : "flex";
- hamburger.innerHTML = isOpen ? "&#9776" : "&times"; // toggle icon
+ hamburger.innerHTML = isOpen ? "&#9776;" : "&times;"; // toggle icon
 });
 
 
