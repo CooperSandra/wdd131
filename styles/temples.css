@@ -29,7 +29,7 @@ header {
 
 header h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 .hamburger {
@@ -67,7 +67,7 @@ main {
     gap: 1rem;
     padding: 1rem;
     margin: 0 auto;
-    max-width: 850px;
+    max-width: 100%;
 }
 
 main h1, main h2 {
