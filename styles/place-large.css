@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    .hero {
+        position: relative;
+    }
+
+/*Data Card */
+.data-card {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 360px;
+}
+
+/*Weather Card */
+.weather-card{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 320px;
+}
+
+.weather-card .card-heading {
+    display: flex;
+    align-items: center;
+}
+
+.weather-card .card-heading::after {
+    content: "🌤️";
+    font-size: 1.5rem;
+    margin-left: 8px;
+}
+
+.weather-card .weather-svg {
+    display: none;
+}
+
+}
+

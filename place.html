@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page | Jamaica</title>
+    <meta name="description" content="Jamaica, a country I have visited">
+    <meta name="author" content="Sandra Louise Cooper">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>    
+</head>
+<body>
+    <!--Header-->
+    <header class="site-header">
+            <h1>Jamaica</h1>
+    </header>
+    <main>
+        <!--Hero-->
+        <section class="hero"> 
+            <picture>
+                <source srcset="images/jamaica-lg.webp" media="(min-width: 768px)">
+                <img src="images/jamaica-sm.webp" alt="Photo credit: SLIC/Shutterstock.com">
+            </picture>
+
+        <!--Data-->
+        <article class="card data-card">
+            <div class="card-heading">
+                <h2>Data</h2>
+            </div>
+            <dl>
+                <dt>Area:</dt><dd>10,991 sq km</dd>
+                <dt>Population:</dt><dd>2,836,547</dd>
+                <dt>Capital:</dt><dd>Kingston</dd>
+                <dt>Languages:</dt><dd>English, Jamaican Patois</dd>
+                <dt>Currency:</dt><dd>Jamaican Dollar (JMD)</dd>
+                <dt>Time Zone:</dt><dd>UTC-5</dd>
+                <dt>Calling Code:</dt><dd>+1-876</dd>
+                <dt>Internet TLD:</dt><dd>.jm</dd>
+            </dl>
+        </article>
+
+        <!--Weather-->
+        <article class="card weather-card">
+            <div class="card-heading">
+                <h2>Weather</h2>
+            </div>
+            <img src="images/weather.svg"  alt="weather icon" class="weather-svg">
+            <dl>
+                <dt>Temperature:</dt><dd><span id="temp">48</span>°F</dd>
+                <dt>Conditions:</dt><dd>Partly Cloudy</dd>
+                <dt>Wind:</dt><dd><span id="wind">5</span> mph</dd>
+                <dt>Wind Chill:</dt><dd id="windchill">N/A</dd>
+            </dl>
+        </article>
+    </section>
+</main>
+
+<!--Footer-->
+<footer class="footer">
+    <p>
+        &copy;<span id="year"></span> &#127803; Sandra Cooper &#127803; Jamaica<br>
+        Last Modification: <span id="lastModified"></span>
+    </p>
+</footer>    
+</body>
+</html>
+
