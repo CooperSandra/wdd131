@@ -5,11 +5,12 @@
     --light: #ffffff;
     --card-bg: rgba(255, 255, 255, 0.70);
     --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --font-family: NotoSans, Roboto;
 }
 
 body {
     margin: 0;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: var(--font-family);
     background: var(--light);
     color: var(--accent);
 }
