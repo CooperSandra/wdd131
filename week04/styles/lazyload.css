@@ -1,0 +1,41 @@
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #ADD8E6;
+    color: darkblue;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(13, 13, 99);
+}
+
+img {
+    display: block;
+    width: 400;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 12px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
