@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background: none;
+    }
+
+    .nav a {
+        padding: 0.5rem 1rem;
+        margin-left: 1rem;
+    }
+
+    .nav a:hover {
+        background: var(--secondary-color);
+        color: var(--light-color);
+        border-radius: 4px;
+    }
+
+    main {
+        max-width: 850px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+}
