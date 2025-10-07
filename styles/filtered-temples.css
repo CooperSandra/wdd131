@@ -15,7 +15,7 @@ body {
     font-family: 'Roboto', 'Montserrat', sans-serif;
     background-color: var(--light-color);
     color: var(--dark-color);
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 header {
