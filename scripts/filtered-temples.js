@@ -128,22 +128,22 @@ function displayTempleCards(filteredTemples) {
             switch (filter) {
                 case "old":
                     filtered = temples.filter((t) => parseInt(t.dedicated.split(",")[0]) < 1900);
-                    headingText = "OLD TEMPLES (Before 1900)";
+                    headingText = "OLD TEMPLES (Before 1900's)";
                     break;
                 
                 case "new":
                     filtered = temples.filter((t) => parseInt(t.dedicated.split(",")[0]) > 2000);
-                    headingText = "NEW TEMPLES (After 2000)";
+                    headingText = "NEW TEMPLES (After 2000's)";
                     break;
                 
                 case "large":
                     filtered = temples.filter((t) => t.area > 90000);
-                    headingText = "LARGE TEMPLES (> 90,000 sq ft)";
+                    headingText = "LARGE TEMPLES (More than 90,000 sq ft)";
                     break;
                 
                 case "small":
                     filtered = temples.filter((t) => t.area < 10000);
-                    headingText = "SMALL TEMPLES (< 90,000 sq ft)";
+                    headingText = "SMALL TEMPLES (Less than 90,000 sq ft)";
                     break;
                 default:
                     filtered = temples;
