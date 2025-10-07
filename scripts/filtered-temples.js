@@ -101,6 +101,8 @@ function displayTempleCards(filteredTemples) {
         img.src = temple.imageUrl;
         img.alt = temple.templeName;
         img.loading = "lazy";
+        img.width = 400;
+        img.height = 250;
 
         const caption = document.createElement("figcaption");
         caption.innerHTML = `<h3>${temple.templeName}</h3>
