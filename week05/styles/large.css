@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
